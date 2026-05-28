@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bárbara Arias Buroz | Full-Stack Developer & Data Engineer Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portafolio Profesional de Bárbara Arias Buroz - Full-Stack Developer & Data Engineer. Especializada en pipelines de datos, arquitecturas de backend seguras y análisis de viabilidad técnica y financiera.">
+  <meta name="keywords" content="Bárbara Arias Buroz, Full-Stack, Data Engineer, ADSO, SENA, Node.js, Supabase, React, Express, AWS S3, PostgreSQL, VPN, TIR, Portafolio">
+  <meta name="author" content="Bárbara Arias Buroz">
+  
+  <!-- OpenGraph Card Meta Tags (Social Media Sharing) -->
+  <meta property="og:title" content="Bárbara Arias Buroz | Full-Stack & Data Engineer">
+  <meta property="og:description" content="Desarrolladora apasionada por la ingeniería de datos, la seguridad web y la optimización de procesos. Explora mis proyectos interactivos.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/barbaraarias844coder">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Background Glowing Meshes -->
+  <div class="bg-glow-container" aria-hidden="true">
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+    <div class="bg-glow-3"></div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="logo">
+      <span>&lt;Bárbara.Buroz /&gt;</span>
+    </a>
+    <!-- Hamburger Button (only visible on mobile) -->
+    <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" class="nav-link-item">Sobre Mí</a></li>
+      <li><a href="#experience" class="nav-link-item">Experiencia</a></li>
+      <li><a href="#projects" class="nav-link-item">Proyectos</a></li>
+      <li><a href="#skills" class="nav-link-item">Habilidades</a></li>
+      <li><a href="#viability" class="nav-link-item">Viabilidad Financiera</a></li>
+      <li><a href="#contact" class="nav-link-item">Contacto</a></li>
+    </ul>
+    <div class="nav-socials">
+      <a href="https://github.com/barbaraarias844coder" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/barbara-buroz-770486368/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+      </a>
+      <button onclick="document.getElementById('contact-modal').classList.add('active')" class="social-icon" aria-label="Información de Contacto" style="background:none;cursor:pointer;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION & TERMINAL WIDGET -->
+  <header class="hero-section" id="home">
+    <div class="hero-content">
+      <span class="hero-title-greeting">// System.out.println("¡Hola Mundo!");</span>
+      <h1 class="hero-title">Bárbara Arias Buroz<br><span>Full-Stack & Data Engineer</span></h1>
+      <p class="hero-desc">
+        Desarrolladora apasionada por la ingeniería de datos, la seguridad web y la optimización de procesos. 
+        Combino la excelencia en el desarrollo de interfaces interactivas y backend Zero-Trust con un enfoque 
+        analítico y financiero para evaluar la viabilidad de cada solución técnica.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-glowing cyan">Explorar Proyectos</a>
+        <a href="#contact" class="btn-glowing outline">Hablemos</a>
+      </div>
+    </div>
+    
+    <div class="hero-visual">
+      <div class="avatar-container">
+        <img src="barbara_real.png" alt="Bárbara Arias Buroz" class="avatar-img">
+      </div>
+    </div>
+  </header>
+
+  <!-- SOBRE MÍ & TRAYECTORIA ACADÉMICA -->
+  <section class="section reveal" id="about">
+    <div class="section-header">
+      <span class="subtitle">01. Perfil Profesional</span>
+      <h2 class="title">Quién Soy y Trayectoria</h2>
+    </div>
+    
+    <div class="about-grid">
+      <div class="about-info">
+        <h3>Full-Stack Developer & Data Engineer</h3>
+        <p>
+          Soy una desarrolladora con una sólida formación tecnológica integral en <strong>ADSO SENA</strong>. 
+          Me especializo en diseñar e implementar soluciones robustas de software que abarcan desde el procesamiento masivo de datos 
+          en la nube hasta el desarrollo de interfaces seguras e interactivas.
+        </p>
+        <p>
+          Mi visión técnica no está aislada; la combino con una fuerte competencia analítica que me permite realizar la 
+          <strong>evaluación financiera e integral de viabilidad</strong> de cada proyecto, garantizando arquitecturas eficientes, 
+          rentables y escalables.
+        </p>
+        <div class="badge cyan">ADSO SENA</div>
+        <div class="badge violet">Data Architect</div>
+        <div class="badge emerald">Financial Analyst</div>
+      </div>
+      
+      <!-- Academic Timeline ADSO SENA -->
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-header">
+              <h4 class="timeline-title">Tecnología en Análisis y Desarrollo de Software</h4>
+              <span class="timeline-date">2024 - 2026</span>
+            </div>
+            <span class="timeline-sub">SENA - Servicio Nacional de Aprendizaje</span>
+            <p>Formación superior enfocada en ingeniería de software, arquitectura de sistemas complejos, liderazgo técnico, metodologías ágiles y proyectos integradores a gran escala.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-header">
+              <h4 class="timeline-title">Técnica en Análisis y Desarrollo de Software</h4>
+              <span class="timeline-date">2022 - 2023</span>
+            </div>
+            <span class="timeline-sub">SENA - Servicio Nacional de Aprendizaje</span>
+            <p>Bases técnicas sólidas en algoritmos, diseño de bases de datos relacionales, fundamentos de redes, metodologías de pruebas y desarrollo web frontend.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA PROFESIONAL -->
+  <section class="section reveal" id="experience">
+    <div class="section-header">
+      <span class="subtitle">02. Trayectoria Laboral</span>
+      <h2 class="title">Experiencia Destacada</h2>
+    </div>
+    
+    <div class="experience-container glass-panel">
+      <!-- Interactive Sidebar Tabs -->
+      <div class="experience-tabs">
+        <button class="experience-tab-btn active" data-tab="data-cloud">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          Arquitectura Cloud & ETL
+        </button>
+        <button class="experience-tab-btn" data-tab="security-backend">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          Seguridad Zero-Trust
+        </button>
+        <button class="experience-tab-btn" data-tab="optim-code">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          Optimización de Código
+        </button>
+      </div>
+      
+      <!-- Interactive Content Area -->
+      <div class="experience-content" id="experience-content-box">
+        <!-- Default Tab Active: Data & Cloud -->
+        <h3 class="experience-title">Desarrolladora de Software <span class="experience-company">@ Idiomas OCW S.A.S.</span></h3>
+        <span class="experience-date">Noviembre 2025 - Abril 2026 (Etapa Productiva)</span>
+        <ul class="experience-list">
+          <li><strong>Pipelines de Ingesta Masiva (ETL):</strong> Diseño e implementación de workflows de transformación de datos para más de 30 millones de registros de vocabulario académico.</li>
+          <li><strong>Integración y Despliegue en AWS:</strong> Carga automatizada y distribución segura de activos y archivos de datos a buckets de Amazon S3, optimizando tiempos de acceso y disponibilidad de recursos.</li>
+          <li><strong>Estandarización de Datasets:</strong> Unificación de lemas y frases de fuentes heterogéneas (Oxford, Longman, OPAL) en un set de datos maestro con tipologías de errores controladas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS ESTRATÉGICOS CON PLAYGROUNDS -->
+  <section class="section reveal" id="projects">
+    <div class="section-header">
+      <span class="subtitle">03. Portafolio Técnico</span>
+      <h2 class="title">Proyectos Estratégicos & Demostraciones</h2>
+    </div>
+    
+    <div class="projects-grid">
+      
+      <!-- PROJECT 1: CERTIFICATE GENERATOR -->
+      <div class="project-card glass-panel">
+        <div class="project-info">
+          <span class="project-category">Full-Stack Development & Security</span>
+          <h3 class="project-title">Generador de Certificados Académicos</h3>
+          <p class="project-desc">
+            Sistema seguro para la emisión de diplomas digitales automatizados. 
+            Utiliza una arquitectura Zero-Trust, controlando la autenticación mediante cookies seguras HTTP-only 
+            y restringiendo el acceso al historial por medio de políticas RLS a nivel de base de datos en Supabase.
+          </p>
+          <ul class="project-tech">
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Supabase RLS</li>
+            <li>Zod</li>
+          </ul>
+          <div class="badge violet">Emisión Segura</div>
+        </div>
+        
+        <!-- Live Certificate Simulator Playground -->
+        <div class="project-playground">
+          <h4 class="playground-title"><span></span>Simulador de Emisión (En Vivo)</h4>
+          <div class="playground-form">
+            <div class="form-group">
+              <label class="form-label" for="cert-name">Nombre del Estudiante:</label>
+              <input type="text" id="cert-name" class="form-input" value="Bárbara Arias Buroz" placeholder="Ingresa un nombre">
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="cert-level">Nivel Académico (CEFR):</label>
+              <select id="cert-level" class="form-select">
+                <option value="A1">Nivel A1 - Acceso</option>
+                <option value="A2">Nivel A2 - Plataforma</option>
+                <option value="B1">Nivel B1 - Umbral</option>
+                <option value="B2" selected>Nivel B2 - Avanzado</option>
+                <option value="C1">Nivel C1 - Dominio Operativo Eficaz</option>
+              </select>
+            </div>
+            
+            <button class="btn-glowing cyan" id="btn-generate-cert">Generar Certificado</button>
+            
+            <!-- Live Preview Area -->
+            <div class="cert-preview-box" id="cert-preview-box">
+              <div class="cert-svg-container" id="cert-svg-container">
+                <!-- SVG dynamically injected here -->
+              </div>
+            </div>
+            <button class="btn-glowing outline" id="btn-download-cert" style="display: none; margin-top: 10px; padding: 8px 20px; font-size: 0.85rem; justify-content: center;">
+              📥 Descargar Diploma (SVG)
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- PROJECT 2: DYNAMIC DICTIONARY -->
+      <div class="project-card glass-panel">
+        <div class="project-info">
+          <span class="project-category">Data Engineering & Ingestion</span>
+          <h3 class="project-title">Diccionario Dinámico & Pipeline ETL</h3>
+          <p class="project-desc">
+            Pipeline automatizado de normalización lingüística. Procesa, limpia y de-duplica archivos masivos de datos sucios (PDFs, escaneos con ruido OCR, textos brutos de corpus), detectando errores de truncamiento comunes y organizándolos en una base consolidada y normalizada en AWS S3.
+          </p>
+          <ul class="project-tech">
+            <li>Node.js</li>
+            <li>Data Streams</li>
+            <li>RegEx Engine</li>
+            <li>Estructuras Set</li>
+            <li>AWS S3</li>
+          </ul>
+          <div class="badge cyan">ETL Masivo</div>
+        </div>
+        
+        <!-- Live CSV Cleaner Playground -->
+        <div class="project-playground">
+          <h4 class="playground-title"><span></span>Playground Limpiador de Datos (ETL)</h4>
+          <div class="cleaner-container">
+            <div class="form-group">
+              <label class="form-label" for="cleaner-input">Entrada del Dataset Bruto (Ingresa texto con ruido de etiquetas):</label>
+              <input type="text" id="cleaner-input" class="form-input" value="1 accommodation n. A1 S1, W3 (something)" placeholder="Ej. 1 accommodation n. A1 S1">
+            </div>
+            <button class="btn-glowing emerald" id="btn-clean-data">Procesar & Normalizar Registro</button>
+            
+            <div class="form-group" style="margin-top: 10px;">
+              <label class="form-label">Fila CSV Limpia y Normalizada:</label>
+              <div class="cleaner-result" id="cleaner-result">Esperando procesamiento...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- PROJECT 3: GENIALLY PLUGINS -->
+      <div class="project-card glass-panel">
+        <div class="project-info">
+          <span class="project-category">Frontend & DOM Manipulation</span>
+          <h3 class="project-title">Plugins y Extensiones para Genially</h3>
+          <p class="project-desc">
+            Micro-librerías en JS nativo (Vanilla) diseñadas para incrustarse como extensiones web interactivas dentro de presentaciones educativas de Genially. Resuelven mecánicas complejas como audio-reproductores con re-estilizado inyectado y automatización de cuestionarios "fill-in-the-gaps" con límites de intentos y control de sesión persistente.
+          </p>
+          <ul class="project-tech">
+            <li>Vanilla JavaScript</li>
+            <li>HTML5 Audio API</li>
+            <li>SessionStorage</li>
+            <li>DOM Manipulation</li>
+            <li>Micro-CSS Injection</li>
+          </ul>
+          <div class="badge emerald">Plugins Ligeros</div>
+        </div>
+        
+        <!-- Interactive Genially Playground -->
+        <div class="project-playground">
+          <h4 class="playground-title"><span></span>Demo de Widget Inyectado (Audio)</h4>
+          <div class="genially-demo-wrapper">
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px;">
+              Simulación de nuestro reproductor dinámico en la presentación. Haz clic en play para ver la interacción.
+            </p>
+            <div class="genially-iframe-sim">
+              <div class="genially-sim-header">
+                <span>🔗 genially.presentation/slide-3</span>
+                <span style="color: var(--accent-emerald);">• Activo (Inject CSS)</span>
+              </div>
+              <div class="genially-sim-body">
+                <!-- Custom Dynamic Widget Rendered -->
+                <div class="widget-audio-player-sim" id="widget-audio-player-sim">
+                  <div class="widget-audio-controls">
+                    <button class="widget-audio-btn" id="audio-play-btn" aria-label="Reproducir">▶</button>
+                    <span style="font-size: 0.8rem; font-family: var(--font-mono);">01:34</span>
+                  </div>
+                  <div class="widget-audio-track">
+                    <div class="widget-audio-progress" id="audio-progress"></div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="color-picker-input">Cambiar color del reproductor dinámicamente (Inyección CSS):</label>
+              <input type="color" id="color-picker-input" class="form-input" style="height: 45px; padding: 2px;" value="#5647ff">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HABILIDADES & RADAR DE COMPETENCIAS -->
+  <section class="section reveal" id="skills">
+    <div class="section-header">
+      <span class="subtitle">04. Perfil Técnico</span>
+      <h2 class="title">Dashboard de Habilidades</h2>
+    </div>
+    
+    <div class="skills-grid">
+      <!-- Interactive SVG Radar Diagram -->
+      <div class="skills-diagram-container">
+        <svg viewBox="0 0 400 400" class="skills-diagram-svg" id="skills-radar-svg">
+          <defs>
+            <linearGradient id="skills-radial-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="rgba(0, 242, 254, 0.4)" />
+              <stop offset="100%" stop-color="rgba(157, 78, 221, 0.4)" />
+            </linearGradient>
+          </defs>
+          
+          <!-- Outer Grid circles -->
+          <circle cx="200" cy="200" r="140" stroke="rgba(255,255,255,0.04)" stroke-dasharray="4 4" fill="none" />
+          <circle cx="200" cy="200" r="105" stroke="rgba(255,255,255,0.04)" stroke-dasharray="4 4" fill="none" />
+          <circle cx="200" cy="200" r="70" stroke="rgba(255,255,255,0.04)" stroke-dasharray="4 4" fill="none" />
+          <circle cx="200" cy="200" r="35" stroke="rgba(255,255,255,0.04)" stroke-dasharray="4 4" fill="none" />
+          
+          <!-- Axes -->
+          <!-- Axis 1: Data Engineering (Up) -->
+          <line x1="200" y1="200" x2="200" y2="40" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+          <!-- Axis 2: Full-Stack (Down Right) -->
+          <line x1="200" y1="200" x2="330" y2="275" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+          <!-- Axis 3: Strategy & Finance (Down Left) -->
+          <line x1="200" y1="200" x2="70" y2="275" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+          
+          <!-- Skill Shape Polygon (Interactive coordinates computed for values: Data=92%, FullStack=85%, Finance=78%) -->
+          <!-- Data Eng: Up (200, 200 - 140 * 0.92 = 200, 71) -->
+          <!-- Full-Stack: Down Right (200 + 130 * 0.85 = 310.5, 200 + 75 * 0.85 = 263.7) -->
+          <!-- Strategy: Down Left (200 - 130 * 0.78 = 98.6, 200 + 75 * 0.78 = 258.5) -->
+          <polygon points="200,71 310.5,263.7 98.6,258.5" fill="url(#skills-radial-grad)" stroke="var(--accent-cyan)" stroke-width="2" />
+          
+          <!-- Dots for interaction -->
+          <circle cx="200" cy="71" r="6" fill="#00f2fe" class="radar-point" id="radar-data-point" stroke="var(--bg-deep)" stroke-width="2" />
+          <circle cx="310.5" cy="263.7" r="6" fill="#9d4edd" class="radar-point" id="radar-fs-point" stroke="var(--bg-deep)" stroke-width="2" />
+          <circle cx="98.6" cy="258.5" r="6" fill="#00f5a0" class="radar-point" id="radar-strat-point" stroke="var(--bg-deep)" stroke-width="2" />
+          
+          <!-- Text Labels -->
+          <text x="200" y="25" text-anchor="middle" fill="#00f2fe" font-family="var(--font-title)" font-size="12" font-weight="bold">INGENIERÍA DE DATOS</text>
+          <text x="335" y="295" text-anchor="middle" fill="#9d4edd" font-family="var(--font-title)" font-size="12" font-weight="bold">DESARROLLO FULL-STACK</text>
+          <text x="65" y="295" text-anchor="middle" fill="#00f5a0" font-family="var(--font-title)" font-size="12" font-weight="bold">ANÁLISIS Y ESTRATEGIA</text>
+        </svg>
+      </div>
+      
+      <!-- Interactive Details Box -->
+      <div class="skills-dashboard">
+        <p style="font-size: 0.95rem; color: var(--text-muted); font-family: var(--font-mono);">
+          // Haz clic en los vértices del radar para explorar las sub-habilidades de cada área.
+        </p>
+        <div class="skill-info-card glass-panel" id="skill-info-card">
+          <!-- Active content dynamically swapped -->
+          <h3 class="skill-card-title" id="skill-card-title" style="color: var(--accent-cyan);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+            Ingeniería de Datos & Big Data
+          </h3>
+          <p class="skill-card-desc" id="skill-card-desc">
+            Especialista en estructuración y automatización de flujos de datos. 
+            Construcción de pipelines robustos de Ingesta, transformación y modelamiento de bases de datos masivas. 
+            Integración de almacenamiento escalable y arquitecturas optimizadas para análisis masivos.
+          </p>
+          <ul class="skill-tags" id="skill-tags">
+            <li>Pipelines ETL</li>
+            <li>AWS S3</li>
+            <li>Supabase / PostgreSQL</li>
+            <li>Data Ingestion</li>
+            <li>Normalización de Textos</li>
+            <li>RegEx Engines</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULADORA DE VIABILIDAD PROYECTOS (CAPEX/OPEX, VPN, TIR) -->
+  <section class="section reveal" id="viability">
+    <div class="section-header">
+      <span class="subtitle">05. Habilidades Analíticas</span>
+      <h2 class="title">Evaluación Financiera & Viabilidad (VPN/TIR)</h2>
+    </div>
+    
+    <div class="calculator-grid">
+      <!-- Inputs Card -->
+      <div class="calc-inputs-card glass-panel">
+        <h3>Calculadora Financiera del Proyecto</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 20px;">
+          Ingresa los valores de estimación técnica y financiera de tu propuesta. El sistema graficará y evaluará en tiempo real el VPN y la TIR.
+        </p>
+        
+        <div class="playground-form">
+          <div class="form-group">
+            <label class="form-label" for="calc-capex">Inversión Inicial (CAPEX - $):</label>
+            <input type="number" id="calc-capex" class="form-input" value="12000" min="1000" step="500">
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="calc-opex">Costos Operativos Anuales (OPEX - $):</label>
+            <input type="number" id="calc-opex" class="form-input" value="2500" min="500" step="100">
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="calc-rate">Tasa de Descuento (WACC - %):</label>
+            <input type="number" id="calc-rate" class="form-input" value="12" min="1" max="50">
+          </div>
+          
+          <!-- Dynamic Cash Flow Rows -->
+          <div class="form-group">
+            <label class="form-label">Ingresos Proyectados Anuales ($):</label>
+            <div class="cash-flows-list">
+              <div class="flow-row">
+                <span class="flow-label">Año 1</span>
+                <input type="number" id="calc-flow-1" class="form-input" value="7500" min="0">
+              </div>
+              <div class="flow-row">
+                <span class="flow-label">Año 2</span>
+                <input type="number" id="calc-flow-2" class="form-input" value="8500" min="0">
+              </div>
+              <div class="flow-row">
+                <span class="flow-label">Año 3</span>
+                <input type="number" id="calc-flow-3" class="form-input" value="9500" min="0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Results & SVG Chart Panel -->
+      <div class="calc-results-panel">
+        <div class="results-metrics-grid">
+          <div class="metric-card glass-panel" id="vpn-metric-card">
+            <span class="metric-label">Valor Presente Neto (VPN)</span>
+            <span class="metric-value emerald" id="calc-vpn-val">$0.00</span>
+            <span class="badge emerald" id="calc-vpn-badge">Proyecto Viable</span>
+          </div>
+          
+          <div class="metric-card glass-panel" id="tir-metric-card">
+            <span class="metric-label">Tasa Interna de Retorno (TIR)</span>
+            <span class="metric-value cyan" id="calc-tir-val">0.0%</span>
+            <span class="badge cyan" id="calc-tir-badge">Rentable</span>
+          </div>
+        </div>
+        
+        <!-- Live SVG Curve Plot -->
+        <div class="calc-chart-box">
+          <svg viewBox="0 0 400 200" class="calc-chart-svg" id="calc-chart-svg">
+            <!-- Dynamic Chart Drawing injected by JS -->
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section reveal" id="contact">
+    <div class="section-header">
+      <span class="subtitle">06. Conectemos</span>
+      <h2 class="title">Iniciar una Conversación</h2>
+    </div>
+    
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>¿Tienes una propuesta o un desafío en mente?</h3>
+        <p>
+          Si estás buscando implementar flujos de datos automatizados seguros, resolver problemas de optimización 
+          de código en tu infraestructura o planificar y estructurar financieramente una solución técnica escalable, 
+          ¡hablemos!
+        </p>
+        
+        <ul class="contact-methods">
+          <li class="contact-method-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div>
+              <span class="contact-label">Correo Electrónico Directo</span>
+              <a href="mailto:barbaraburoz@gmail.com" class="contact-val">barbaraburoz@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-method-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </div>
+            <div>
+              <span class="contact-label">Repositorios de Código</span>
+              <a href="https://github.com/barbaraarias844coder" target="_blank" rel="noopener noreferrer" class="contact-val">github.com/barbaraarias844coder</a>
+            </div>
+          </li>
+          <li class="contact-method-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </div>
+            <div>
+              <span class="contact-label">Red Profesional</span>
+              <a href="https://www.linkedin.com/in/barbara-buroz-770486368/" target="_blank" rel="noopener noreferrer" class="contact-val">linkedin.com/in/barbara-buroz</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Contact Form Card -->
+      <div class="contact-form-card glass-panel">
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xlgvpbjg" method="POST">
+          <div class="form-group">
+            <label class="form-label" for="contact-name">Tu Nombre:</label>
+            <input type="text" id="contact-name" name="name" class="form-input" required placeholder="Ej. Juan Pérez">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-email">Tu Correo Electrónico:</label>
+            <input type="email" id="contact-email" name="email" class="form-input" required placeholder="Ej. juan@empresa.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-msg">Mensaje / Propuesta:</label>
+            <textarea id="contact-msg" name="message" class="form-input textarea-input" required placeholder="Describe brevemente tu proyecto o consulta..."></textarea>
+          </div>
+          <button type="submit" class="btn-glowing violet" style="justify-content: center;">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="logo">
+        <span>&lt;Bárbara.Buroz /&gt;</span>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Bárbara Arias Buroz. Todos los derechos reservados. Desarrollado con ❤️ y Vanilla JS.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Info Modal -->
+  <div id="contact-modal" class="contact-modal-overlay" onclick="if(event.target===this)this.classList.remove('active')" role="dialog" aria-modal="true" aria-label="Información de Contacto">
+    <div class="contact-modal-box glass-panel">
+      <button class="contact-modal-close" onclick="document.getElementById('contact-modal').classList.remove('active')" aria-label="Cerrar">✕</button>
+      <h2 class="contact-modal-title">Información de Contacto</h2>
+      <p class="contact-modal-sub">Bárbara Arias Buroz</p>
+      <ul class="contact-modal-list">
+        <li>
+          <span class="contact-modal-icon">📞</span>
+          <div>
+            <span class="contact-modal-label">Teléfono / WhatsApp</span>
+            <a href="tel:+573013771644" class="contact-modal-val">+57 301 377 1644</a>
+          </div>
+        </li>
+        <li>
+          <span class="contact-modal-icon">✉️</span>
+          <div>
+            <span class="contact-modal-label">Correo Electrónico</span>
+            <a href="mailto:barbaraburoz@gmail.com" class="contact-modal-val">barbaraburoz@gmail.com</a>
+          </div>
+        </li>
+        <li>
+          <span class="contact-modal-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </span>
+          <div>
+            <span class="contact-modal-label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/barbara-buroz-770486368/" target="_blank" rel="noopener noreferrer" class="contact-modal-val">linkedin.com/in/barbara-buroz</a>
+          </div>
+        </li>
+        <li>
+          <span class="contact-modal-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+          </span>
+          <div>
+            <span class="contact-modal-label">GitHub</span>
+            <a href="https://github.com/barbaraarias844coder" target="_blank" rel="noopener noreferrer" class="contact-modal-val">github.com/barbaraarias844coder</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="index.js"></script>
+</body>
+</html>
