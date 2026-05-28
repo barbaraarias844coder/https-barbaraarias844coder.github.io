@@ -15,6 +15,21 @@ document.addEventListener('DOMContentLoaded', () => {
   initHamburgerMenu();
 });
 
+// Utility: escape user-provided strings before inserting into HTML/SVG
+function escapeHTML(input) {
+  return String(input)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+// Utility: sanitize filename for downloads
+function sanitizeFileName(name) {
+  return String(name || 'Logro').replace(/\s+/g, '_').replace(/[^\w\-_.]/g, '');
+}
+
 /* ==========================================================================
    01. SCROLL REVEAL ANIMATIONS (INTERSECTION OBSERVER)
    ========================================================================== */
@@ -97,10 +112,10 @@ function initTerminal() {
       const inputVal = terminalInput.value.trim();
       const lowerInput = inputVal.toLowerCase();
       
-      // Output the entered command first
+      // Output the entered command first (escape user input)
       const inputLine = document.createElement('div');
       inputLine.className = 'terminal-output-line';
-      inputLine.innerHTML = `<span class="terminal-prompt">barbara@portafolio:~$</span> ${inputVal}`;
+      inputLine.innerHTML = `<span class="terminal-prompt">barbara@portafolio:~$</span> <span class="terminal-user-input">${escapeHTML(inputVal)}</span>`;
       
       // Insert before input container
       terminalBody.insertBefore(inputLine, terminalInput.parentNode);
@@ -116,7 +131,7 @@ function initTerminal() {
         if (commands[lowerInput]) {
           responseLine.innerHTML = commands[lowerInput]();
         } else {
-          responseLine.innerHTML = `Comando no reconocido: <span style="color: var(--accent-pink);">${inputVal}</span>. Escribe <span style="color: var(--accent-cyan);">help</span> para ver opciones.`;
+          responseLine.innerHTML = `Comando no reconocido: <span style="color: var(--accent-pink);">${escapeHTML(inputVal)}</span>. Escribe <span style="color: var(--accent-cyan);">help</span> para ver opciones.`;
         }
         terminalBody.insertBefore(responseLine, terminalInput.parentNode);
       }
@@ -245,11 +260,11 @@ function initCertificateGenerator() {
   <text x="300" y="160" text-anchor="middle" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="18" font-weight="800" letter-spacing="1">CERTIFICADO DE LOGRO</text>
   
   <!-- Student Name -->
-  <text x="300" y="205" text-anchor="middle" fill="#00f2fe" font-family="'Outfit', sans-serif" font-size="22" font-weight="700" letter-spacing="0.5">${studentName}</text>
+  <text x="300" y="205" text-anchor="middle" fill="#00f2fe" font-family="'Outfit', sans-serif" font-size="22" font-weight="700" letter-spacing="0.5">${escapeHTML(studentName)}</text>
   
   <!-- Description -->
   <text x="300" y="235" text-anchor="middle" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Ha demostrado solvencia y completado exitosamente las competencias del nivel</text>
-  <text x="300" y="255" text-anchor="middle" fill="#00f5a0" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" letter-spacing="2">MARCO CEFR - ${cefrLevel}</text>
+  <text x="300" y="255" text-anchor="middle" fill="#00f5a0" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" letter-spacing="2">MARCO CEFR - ${escapeHTML(cefrLevel)}</text>
   
   <!-- Footer signatures & Date -->
   <line x1="120" y1="300" x2="240" y2="300" stroke="#1f2d48" stroke-width="1"/>
@@ -288,7 +303,7 @@ function initCertificateGenerator() {
     
     const downloadLink = document.createElement('a');
     downloadLink.href = url;
-    downloadLink.download = `Certificado_${inputName.value.replace(/\s+/g, '_') || 'Logro'}.svg`;
+    downloadLink.download = `Certificado_${sanitizeFileName(inputName.value)}.svg`;
     document.body.appendChild(downloadLink);
     downloadLink.click();
     
@@ -697,7 +712,7 @@ function initContactForm() {
             </div>
             <h3 style="font-family: var(--font-title); font-size: 1.4rem; color: var(--text-primary);">¡Mensaje Enviado con Éxito!</h3>
             <p style="color: var(--text-secondary); font-size: 0.95rem; max-width: 320px;">
-              Gracias por contactar, <strong>${nameVal}</strong>. Estaré revisando tu propuesta y me comunicaré contigo a la brevedad.
+              Gracias por contactar, <strong>${escapeHTML(nameVal)}</strong>. Estaré revisando tu propuesta y me comunicaré contigo a la brevedad.
             </p>
           </div>
         `;
