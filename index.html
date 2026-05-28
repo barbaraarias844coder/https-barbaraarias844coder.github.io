@@ -15,7 +15,7 @@
   <meta property="og:description" content="Desarrolladora apasionada por la ingeniería de datos, la seguridad web y la optimización de procesos. Explora mis proyectos interactivos.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://github.com/barbaraarias844coder">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; frame-ancestors 'none';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; frame-ancestors 'none';">
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="index.css">
@@ -56,7 +56,7 @@
       <a href="https://www.linkedin.com/in/barbara-buroz-770486368/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
       </a>
-      <button onclick="document.getElementById('contact-modal').classList.add('active')" class="social-icon" aria-label="Información de Contacto" style="background:none;cursor:pointer;">
+      <button class="social-icon js-contact-open" aria-label="Información de Contacto" style="background:none;cursor:pointer;">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
       </button>
     </div>
@@ -572,9 +572,9 @@
   </footer>
 
   <!-- Contact Info Modal -->
-  <div id="contact-modal" class="contact-modal-overlay" onclick="if(event.target===this)this.classList.remove('active')" role="dialog" aria-modal="true" aria-label="Información de Contacto">
+  <div id="contact-modal" class="contact-modal-overlay" role="dialog" aria-modal="true" aria-label="Información de Contacto">
     <div class="contact-modal-box glass-panel">
-      <button class="contact-modal-close" onclick="document.getElementById('contact-modal').classList.remove('active')" aria-label="Cerrar">✕</button>
+      <button class="contact-modal-close" aria-label="Cerrar">✕</button>
       <h2 class="contact-modal-title">Información de Contacto</h2>
       <p class="contact-modal-sub">Bárbara Arias Buroz</p>
       <ul class="contact-modal-list">

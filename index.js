@@ -12,8 +12,35 @@ document.addEventListener('DOMContentLoaded', () => {
   initSkillsRadar();
   initFinancialCalculator();
   initContactForm();
+  initContactModal();
   initHamburgerMenu();
 });
+
+// Contact modal open/close handlers (avoid inline handlers)
+function initContactModal() {
+  const openBtn = document.querySelector('button.js-contact-open');
+  const modal = document.getElementById('contact-modal');
+  if (!modal || !openBtn) return;
+
+  const closeBtn = modal.querySelector('.contact-modal-close');
+
+  openBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.classList.add('active');
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.classList.remove('active');
+    });
+  }
+
+  // Close when clicking on overlay background
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) modal.classList.remove('active');
+  });
+}
 
 // Utility: escape user-provided strings before inserting into HTML/SVG
 function escapeHTML(input) {
