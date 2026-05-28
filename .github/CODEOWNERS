@@ -1,0 +1,8 @@
+# Code owners file: automatically request review from the repo owner
+# Lines starting with '#' are comments.
+
+/* @barbaraarias844coder
+
+# You can add team or directory-specific owners, for example:
+# /src/ @org/team-backend
+# /docs/ @org/docs-team
